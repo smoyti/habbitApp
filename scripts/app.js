@@ -1,1 +1,3 @@
-    
+    function say() {
+        alert('Hellio')
+    }
