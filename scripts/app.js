@@ -88,6 +88,12 @@ function rerender(activeHabbitId) {
 	rerenderContent(activeHabbit);
 }
 
+function addDAys(event) {
+	event.preventDefault();
+	const data = new FormData(event.target);
+	console.log(data.get('comment'));
+}
+
 (() => {
 	loadData();
 	rerender(habbits[0].id)
